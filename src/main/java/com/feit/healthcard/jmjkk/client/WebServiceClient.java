@@ -25,7 +25,7 @@ public class WebServiceClient implements ApplicationRunner {
         aaa = "<root><request><YLJGDM>620000000376</YLJGDM><QRCODE>E9FA5F36BF04BCC9637145E79562707C1C9C84AEB75E6C0D4BC85EBE747623E7</QRCODE><TERMID>123456</TERMID><TERMCODE>01</TERMCODE><MEDDEPTCODE>5600</MEDDEPTCODE><MEDSTEPCODE>010101</MEDSTEPCODE><OUTTRADENO>1</OUTTRADENO></request></root>";
 //        PersonalWsService serviceLocator = new PersonalWsServiceLocator();
 //        PersonalWsServiceSoapBindingStub bindingStub = (PersonalWsServiceSoapBindingStub) serviceLocator.getPersonalWsPort();
-        String aa = wsServiceConfig.personalWsServiceInfo().qrcodeVerification(aaa);
-        System.out.println(aa);
+//        String aa = wsServiceConfig.personalWsServiceInfo().qrcodeVerification(aaa);
+//        System.out.println(aa);
     }
 }

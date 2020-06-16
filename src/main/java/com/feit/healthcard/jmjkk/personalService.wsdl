@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.gateway.sdc.gsww.com/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="PersonalWsService" targetNamespace="http://ws.gateway.sdc.gsww.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.gateway.sdc.gsww.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://ws.gateway.sdc.gsww.com/">
+  <xs:element name="deviceActive" type="tns:deviceActive"/>
+  <xs:element name="deviceActiveResponse" type="tns:deviceActiveResponse"/>
+  <xs:element name="patientCancel" type="tns:patientCancel"/>
+  <xs:element name="patientCancelResponse" type="tns:patientCancelResponse"/>
+  <xs:element name="patientRegiste" type="tns:patientRegiste"/>
+  <xs:element name="patientRegisteResponse" type="tns:patientRegisteResponse"/>
+  <xs:element name="patientSearch" type="tns:patientSearch"/>
+  <xs:element name="patientSearchResponse" type="tns:patientSearchResponse"/>
+  <xs:element name="personalRegisteRevise" type="tns:personalRegisteRevise"/>
+  <xs:element name="personalRegisteReviseResponse" type="tns:personalRegisteReviseResponse"/>
+  <xs:element name="qrcodeApplication" type="tns:qrcodeApplication"/>
+  <xs:element name="qrcodeApplicationResponse" type="tns:qrcodeApplicationResponse"/>
+  <xs:element name="qrcodeVerification" type="tns:qrcodeVerification"/>
+  <xs:element name="qrcodeVerificationResponse" type="tns:qrcodeVerificationResponse"/>
+  <xs:element name="reportQrcodeUse" type="tns:reportQrcodeUse"/>
+  <xs:element name="reportQrcodeUseBatch" type="tns:reportQrcodeUseBatch"/>
+  <xs:element name="reportQrcodeUseBatchResponse" type="tns:reportQrcodeUseBatchResponse"/>
+  <xs:element name="reportQrcodeUseResponse" type="tns:reportQrcodeUseResponse"/>
+  <xs:complexType name="deviceActive">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deviceActiveResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qrcodeApplication">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qrcodeApplicationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reportQrcodeUseBatch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reportQrcodeUseBatchResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientRegiste">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientRegisteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qrcodeVerification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="qrcodeVerificationResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personalRegisteRevise">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personalRegisteReviseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientCancel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientCancelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientSearch">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="patientSearchResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reportQrcodeUse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reportQrcodeUseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="text" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exception" type="tns:Exception"/>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="patientCancelResponse">
+    <wsdl:part element="tns:patientCancelResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="qrcodeApplication">
+    <wsdl:part element="tns:qrcodeApplication" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reportQrcodeUseBatch">
+    <wsdl:part element="tns:reportQrcodeUseBatch" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="patientSearchResponse">
+    <wsdl:part element="tns:patientSearchResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reportQrcodeUseResponse">
+    <wsdl:part element="tns:reportQrcodeUseResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Exception">
+    <wsdl:part element="tns:Exception" name="Exception">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personalRegisteReviseResponse">
+    <wsdl:part element="tns:personalRegisteReviseResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="patientCancel">
+    <wsdl:part element="tns:patientCancel" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="patientRegisteResponse">
+    <wsdl:part element="tns:patientRegisteResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deviceActive">
+    <wsdl:part element="tns:deviceActive" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reportQrcodeUseBatchResponse">
+    <wsdl:part element="tns:reportQrcodeUseBatchResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="qrcodeVerificationResponse">
+    <wsdl:part element="tns:qrcodeVerificationResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="patientRegiste">
+    <wsdl:part element="tns:patientRegiste" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="qrcodeVerification">
+    <wsdl:part element="tns:qrcodeVerification" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="personalRegisteRevise">
+    <wsdl:part element="tns:personalRegisteRevise" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="qrcodeApplicationResponse">
+    <wsdl:part element="tns:qrcodeApplicationResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deviceActiveResponse">
+    <wsdl:part element="tns:deviceActiveResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="patientSearch">
+    <wsdl:part element="tns:patientSearch" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="reportQrcodeUse">
+    <wsdl:part element="tns:reportQrcodeUse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PersonalWs">
+    <wsdl:operation name="deviceActive">
+      <wsdl:input message="tns:deviceActive" name="deviceActive">
+    </wsdl:input>
+      <wsdl:output message="tns:deviceActiveResponse" name="deviceActiveResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qrcodeApplication">
+      <wsdl:input message="tns:qrcodeApplication" name="qrcodeApplication">
+    </wsdl:input>
+      <wsdl:output message="tns:qrcodeApplicationResponse" name="qrcodeApplicationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reportQrcodeUseBatch">
+      <wsdl:input message="tns:reportQrcodeUseBatch" name="reportQrcodeUseBatch">
+    </wsdl:input>
+      <wsdl:output message="tns:reportQrcodeUseBatchResponse" name="reportQrcodeUseBatchResponse">
+    </wsdl:output>
+      <wsdl:fault message="tns:Exception" name="Exception">
+    </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="patientRegiste">
+      <wsdl:input message="tns:patientRegiste" name="patientRegiste">
+    </wsdl:input>
+      <wsdl:output message="tns:patientRegisteResponse" name="patientRegisteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qrcodeVerification">
+      <wsdl:input message="tns:qrcodeVerification" name="qrcodeVerification">
+    </wsdl:input>
+      <wsdl:output message="tns:qrcodeVerificationResponse" name="qrcodeVerificationResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personalRegisteRevise">
+      <wsdl:input message="tns:personalRegisteRevise" name="personalRegisteRevise">
+    </wsdl:input>
+      <wsdl:output message="tns:personalRegisteReviseResponse" name="personalRegisteReviseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="patientCancel">
+      <wsdl:input message="tns:patientCancel" name="patientCancel">
+    </wsdl:input>
+      <wsdl:output message="tns:patientCancelResponse" name="patientCancelResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="patientSearch">
+      <wsdl:input message="tns:patientSearch" name="patientSearch">
+    </wsdl:input>
+      <wsdl:output message="tns:patientSearchResponse" name="patientSearchResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reportQrcodeUse">
+      <wsdl:input message="tns:reportQrcodeUse" name="reportQrcodeUse">
+    </wsdl:input>
+      <wsdl:output message="tns:reportQrcodeUseResponse" name="reportQrcodeUseResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PersonalWsServiceSoapBinding" type="tns:PersonalWs">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="deviceActive">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/deviceActive" style="document"/>
+      <wsdl:input name="deviceActive">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deviceActiveResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qrcodeApplication">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/qrcodeApplication" style="document"/>
+      <wsdl:input name="qrcodeApplication">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="qrcodeApplicationResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reportQrcodeUseBatch">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/reportQrcodeUseBatch" style="document"/>
+      <wsdl:input name="reportQrcodeUseBatch">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="reportQrcodeUseBatchResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="Exception">
+        <soap12:fault name="Exception" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="patientRegiste">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/patientRegiste" style="document"/>
+      <wsdl:input name="patientRegiste">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="patientRegisteResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="qrcodeVerification">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/qrcodeVerification" style="document"/>
+      <wsdl:input name="qrcodeVerification">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="qrcodeVerificationResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personalRegisteRevise">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/personalRegisteRevise" style="document"/>
+      <wsdl:input name="personalRegisteRevise">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="personalRegisteReviseResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="patientCancel">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/patientCancel" style="document"/>
+      <wsdl:input name="patientCancel">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="patientCancelResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="patientSearch">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/patientSearch" style="document"/>
+      <wsdl:input name="patientSearch">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="patientSearchResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reportQrcodeUse">
+      <soap12:operation soapAction="http://ws.gateway.sdc.gsww.com/reportQrcodeUse" style="document"/>
+      <wsdl:input name="reportQrcodeUse">
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="reportQrcodeUseResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonalWsService">
+    <wsdl:port binding="tns:PersonalWsServiceSoapBinding" name="PersonalWsPort">
+      <soap12:address location="http://10.85.40.82:8082/soap/personalService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
